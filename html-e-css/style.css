@@ -1,0 +1,38 @@
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+    
+}
+
+
+.titulo-destaque {
+    color: #E98A15;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+span{
+    color: #17B890;
+    border: 1px solid #17B890;
+    padding: 10px;
+}
+
+a {
+    color: #17B890;
+    
+}
+
+a:hover, a:focus {
+    color: #A31621;
+}
+
+/*
+Banco de cores
+branco #FFFFFF
+preto #000000
+laranja #E98A15
+vermelho #A31621
+menta #17B890
+*/
