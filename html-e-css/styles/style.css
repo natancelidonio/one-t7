@@ -35,7 +35,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-secundaria);
 }
@@ -45,10 +45,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .apresentacao__conteudo {
-    width: 710px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -59,17 +60,23 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
 .main-techs {
     color: var(--cor-destaque);
+}
+
+.call-to-action-text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    margin-top: -6%;
 }
 
 .apresentacao__links {
@@ -83,27 +90,28 @@ body {
 .apresentacao__links__subtitulo {
     margin-bottom: -8px;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-destaque);
     color: var(--cor-secundaria);
-    width: 300px;
-    padding: 10px 0px;
+    width: 80%;
+    padding: 15px 0px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     border-radius: 8px;
     font-family: var(--fonte-secundaria);
+    transition: 0.3s;
 
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-botao-hover);
     border: 2px solid var(--cor-terciaria);
 }
@@ -120,10 +128,17 @@ span{
 
 a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 a:hover, a:focus {
     color: var(--cor-terciaria);
+    transition: 0.2s;
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .rodape {
@@ -132,7 +147,31 @@ a:hover, a:focus {
     padding: 20px;
     border: 2px solid var(--cor-vermelho);
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;  
 }
 
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__links__navegacao {
+        font-size: 1rem;
+        
+    }
+
+}
