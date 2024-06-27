@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="./styles/style.css"
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um contrato inteligente!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá. Meu nome é <strong>Natan Celidonio</strong>, sou desenvolvedor de softwares, Full-Stack. <span>Java, Python, Solidity, Vue.js, e SASS</span><br>Ajudo empreendedores a colocar em prática boas ideias, com o uso de blockchains e smart contracts.<br>Vamos conversar?</p>
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio com<strong class="titulo-destaque"> contratos inteligentes!</strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá. Meu nome é <strong>Natan Celidonio</strong>, sou desenvolvedor de softwares, Full-Stack. <span>Java, Python, Solidity, Vue.js, e SASS</span><br>Ajudo empreendedores a colocar em prática boas ideias, com o uso de <strong class="main-techs">blockchains</strong> e <strong class="main-techs">smart contracts</strong>.<br>Vamos conversar?</p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Entre em contato.</h2>
-                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/natan-celidonio-fernandes/">LinkedIn</a>
-                <a class="apresentacao__links__link" href="https://github.com/natancelidonio">GitHub</a>
+                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/natan-celidonio-fernandes/">
+                    <img src="./assets/linkedin-logo-laranja.png">
+                    LinkedIn
+                </a>
+                <a class="apresentacao__links__link" href="https://github.com/natancelidonio">
+                    <img src="./assets/github-logo-laranja.png">
+                    GitHub
+                </a>
             </div>
         </section>
-        <img src="imagem-natan-og.jpeg" alt="Imagem de perfil - Natan Celidonio">
+        <img src="./assets/imagem-natan-og.jpeg" alt="Imagem de perfil - Natan Celidonio">
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Natan Celidonio Fernandes</p>
+    </footer>
 </body>
 </html>
